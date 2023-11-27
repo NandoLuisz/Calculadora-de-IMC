@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/75e512c927.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-image">
+        <img src="img/alimentacao-saudavel-dasa-scaled.jpg" alt="" />
+      </div>
+      <div class="form">
+        <form id="form-box">
+          <div class="form-container">
+            <div class="title">
+              <h1>Calculadora de IMC</h1>
+            </div>
+            <div class="input-box">
+              <label for="peso"><h3>Peso em KG</h3> </label>
+              <div class="input-field">
+                <i class="fa-solid fa-weight-hanging"></i>
+                <input type="text" id="peso" />
+                <span>Kg</span>
+              </div>
+            </div>
+            <div class="input-box">
+              <label for="altura"><h3>Altura em metros</h3></label>
+              <div class="input-field">
+                <i class="fa-solid fa-ruler"></i>
+                <input type="text" id="altura" />
+                <span>m</span>
+              </div>
+            </div>
+            <button type="submit" id="calcular">Calcular</button>
+          </div>
+          <div id="resultado" class="hiden">
+            <div class="title"><h3>RESULTADO:</h3></div>
+            <div id="numeros">
+              <div class="IMC">
+                <h3>Seu IMC:</h3>
+                <span id="kg"></span>
+              </div>
+              <div class="situacion">
+                <h3>Situação:</h3>
+                <span id="situacao"></span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
